@@ -12,24 +12,20 @@
     
 </head>
 <body>
-    
-      <div class="wrapper">
+    <div>
+      <div class="d-none d-sm-flex container-img">
         <picture>
-          <source media="(max-width: 650px)" srcset="img/black-and-white-bg-1220-800.png">
-          <source media="(max-width: 500px)" srcset="img/black-and-white-bg-400-267.png">
-    
-          <img src="img/black-and-white-bg-800-500.png" class="img-responsive img-fluid" alt="Responsive image">
-        </picture>
-          <div class="mx-auto" id="centered-img-text">Stephen King is an American writer, producer and screenwriter. Best known as a writer, his books have reached a total of 350 million sales in 40 countries. More than 30 books have been adapted for films in 40 years of career. Currently, he is the ninth most translated author in the world.
-          </div>
-    
-      </div>
-  
+          <source media="(max-width: 750px)" srcset="img/black-and-white-bg-400-267.png">
 
-<!--
-  <div class="container container1 mb-5">
-    <p class="mx-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus hic similique distinctio, voluptas provident eligendi minima dolore non quibusdam aspernatur recusandae sapiente, dolor illum reprehenderit ipsum obcaecati perferendis est enim!</p>
-  </div>-->
+          <img src="img/black-and-white-bg-800-500.png" class="img-responsive img-fluid" alt="Responsive image">
+          
+        </picture>
+        <p id="centered-img-text">Stephen King is an American writer, producer and screenwriter. Best known as a writer, his books have reached a total of 350 million sales in 40 countries. More than 30 books have been adapted for films in 40 years of career. Currently, he is the ninth most translated author in the world.
+        </p>
+        </div> 
+      
+          
+  
     
     <div class="container">
         <h2 class="pb-3 pt-2 mb-5 text-center">Stephen King's Timeline</h2>
@@ -126,7 +122,6 @@
               <p>Enters the university of maine to study English, where he wrote a column titled "King's Garbage Truck" for the student newspaper, Maine Campus.</p>
             </div>
           </div>
-          <!--reveja a partir daqui-->
           <!--path between 5-6-->
           <div class="row timeline">
             <div class="col-2">
@@ -346,7 +341,7 @@
               <hr/>
             </div>
             <div class="col-2">
-              <div class="corner left-bottom"></div>
+              <div class="corner left-bottom-end"></div>
             </div>
           </div>
           <!--sixteenth section-->
@@ -358,34 +353,11 @@
                 <div class="circle font-weight-bold end-timeline">2013</div>
               </div>
            </div>
-          
-          
     </div>
+  </div>
 </body>
 </html>
 
 <script src="dep/jquery.min.js"></script>
 <script src="dep/popper.min.js"></script>
 <script src="dep/bootstrap.min.js"></script>
-<script>
-$("html, body").animate({ scrollTop: $('.container').offset().top }, 2000);
-const wrapper = $(".wrapper").height() / 2.5
-
-/*window.onchange = function (e){
-  if ($(document).height() >= wrapper) {
-  $("html, body").animate({ scrollTop: $('.container').offset().top }, 2000)
-}
-}*/
-
-const sbHeight = window.innerHeight * (window.innerHeight / document.body.offsetHeight);
-
-if (sbHeight >= wrapper){
-  $("html, body").animate({ scrollTop: $('.container').offset().top }, 2000)
-}
-
-
-
-
-
-console.log(wrapper, $(document).height())
-</script>

@@ -86,13 +86,13 @@ body {
     position: relative;
     border-radius: 15px;
   }
-  .timeline .top-right {
+  .timeline .top-right { 
     left: 50%;
     top: -50%;
   }
-  .timeline .left-bottom {
+  .timeline .left-bottom { 
     left: -50%;
-    top: calc(50% - 3px);
+    top: calc(50% - 3.2px);
   }
   .timeline .top-left {
     left: -50%;
@@ -101,6 +101,11 @@ body {
   .timeline .right-bottom {
     left: 50%;
     top: calc(50% - 3px);
+  }
+
+  .timeline .left-bottom-end {
+    left: -50%;
+    top: calc(50% - 3.2px);
   }
 
 
@@ -125,23 +130,21 @@ div p a:hover {
   float: right;
 }
 
-img, source {
-  width: 100%;
+img {
+  width: 100vw;
   filter: brightness(9%);
-  height: 100vh;
 
-    
 }
+
 
 #centered-img-text {
   position: absolute;
   top: 70%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 18pt;
+  font-size: 16pt;
   text-align: justify;
   line-height: 1.6em;
-  font-family: var(--font);
   font-weight: bold;
   padding-top:20%;
   padding-bottom:20%;
@@ -151,15 +154,16 @@ img, source {
   #centered-img-text {
     font-size: 14pt;
     line-height: 1.3em;
-    top: 55%;
+    top: 44%;
   }
 }
+
 
 @media screen and (min-width: 650px) and (max-width: 799px){
   #centered-img-text {
     font-size: 12pt;
     line-height: 1.3em;
-    top: 47%;
+    top: 32%;
   }
 }
 
@@ -167,7 +171,7 @@ img, source {
   #centered-img-text {
     font-size: 12pt;
     line-height: 1.3em;
-    top: 37%;
+    top: 28%;
   }
 }
 
@@ -175,7 +179,11 @@ img, source {
   #centered-img-text {
     font-size: 10pt;
     line-height: 1.3em;
-    top: 26%;
+    top: 12%;
+  }
+
+  .container-img {
+    margin-bottom: 15px;
   }
 }
 
